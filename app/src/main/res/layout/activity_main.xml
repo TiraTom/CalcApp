@@ -10,13 +10,12 @@
 
     <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
 
-        <TextView
+        <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=""
-                android:hint="１つ目の数値を入力"
-                android:id="@+id/text1"
+                android:id="@+id/param1"
                 android:inputType="number"
+                android:hint="param1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -25,9 +24,18 @@
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=""
-                android:hint="と"
-                android:id="@+id/confunction1"
+                android:text="と"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/param2"
+                android:inputType="number"
+                android:hint="param2"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -36,20 +44,7 @@
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=""
-                android:hint="２つ目の数値を入力"
-                android:id="@+id/text2"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
-
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:hint=""
-                android:id="@+id/confunction2"
+                android:text="とで"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -63,22 +58,22 @@
 
         <Button android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="足す"
+                android:text="足し算"
                 android:id="@+id/plusButton"/>
 
         <Button android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="引く"
+                android:text="引き算"
                 android:id="@+id/minusButton"/>
 
         <Button android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="掛ける"
+                android:text="掛け算"
                 android:id="@+id/multiplyButton"/>
 
         <Button android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="割る"
+                android:text="割り算"
                 android:id="@+id/divideButton"/>
 
     </LinearLayout>

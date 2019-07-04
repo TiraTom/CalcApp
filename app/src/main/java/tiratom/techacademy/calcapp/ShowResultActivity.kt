@@ -10,7 +10,6 @@ class ShowResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_show_result)
 
-        // TODO エラーなら”ERROR"と表示させたい
-        resultTextView.text = intent.getIntExtra("RESULT", null)?.toString() :? "ERROR"
+        resultTextView.text = intent.getStringExtra("RESULT") ?: "ERROR"
     }
 }
