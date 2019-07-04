@@ -60,14 +60,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             // 掛け算
             R.id.multiplyButton -> moveToResultView(param1Val * param2Val)
             // 割り算
-            R.id.divideButton -> (
+            R.id.divideButton ->
                     // 0で割った時の対処処理
-                    if (param2Val == 0F) {
-                        moveToResultView(null)
-                    } else {
-                        moveToResultView(param1Val / param2Val)
-                    })
-
+                (
+                        if (param2Val == 0F) {
+                            moveToResultView(null)
+                        } else {
+                            moveToResultView(param1Val / param2Val)
+                        })
         }
 
     }
